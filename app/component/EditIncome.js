@@ -4,7 +4,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
 export default async function EditIncome() {
+  console.log(process.env.NEXT_PUBLIC_API_URL);
   let data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/income`);
+
   let response = await data.json();
 
   return (
