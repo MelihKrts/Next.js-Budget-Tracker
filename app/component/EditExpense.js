@@ -1,7 +1,7 @@
 import "react-toastify/dist/ReactToastify.min.css";
 import Link from "next/link";
-import DeleteButton from "@/app/component/DeleteButton";
 import { ToastContainer } from "react-toastify";
+import ExpenseDeleteButton from "@/app/component/ExpenseDeleteButton";
 
 export default async function EditExpense() {
   let data = await fetch(
@@ -43,7 +43,7 @@ export default async function EditExpense() {
 
               {/* Delete Button */}
               <div className="flex lg:w-1/4 items-start lg:items-center mt-4 lg:mt-0">
-                <DeleteButton id={item._id} />
+                <ExpenseDeleteButton id={item._id} />
               </div>
             </div>
           </div>
