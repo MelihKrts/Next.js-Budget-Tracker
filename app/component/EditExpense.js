@@ -4,7 +4,9 @@ import DeleteButton from "@/app/component/DeleteButton";
 import { ToastContainer } from "react-toastify";
 
 export default async function EditExpense() {
-  let data = await fetch("http://localhost:3000/api/expense");
+  let data = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL?.trim()}/api/expense`,
+  );
   let response = await data.json();
 
   return (
