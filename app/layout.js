@@ -14,8 +14,24 @@ export const metadata = {
   authors: {
     name: "Melih Karatas",
   },
+  manifest: "/manifest.json",
   icons: {
     icon: "/favicon.ico",
+    apple: [{ url: "/ios/180.png", sizes: "180x180", type: "image/png" }],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Budget Tracking",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  themeColor: "#cbdfbd",
+  formatDetection: {
+    telephone: false,
   },
 };
 
@@ -23,8 +39,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="application-name" content="Budget Tracking" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#cbdfbd" />
       </head>
       <body className={`${exo.className}  bg-[#cbdfbd]`}>
         <Header />
