@@ -14,7 +14,7 @@ module.exports = {
         custom: "0 0 0 0.2rem rgba(0, 90, 125, 0.25)",
       },
       screens: {
-        sm: "475px",
+        sm: "320px",
       },
       colors: {
         background: "var(--background)",
