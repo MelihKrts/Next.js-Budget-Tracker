@@ -34,13 +34,13 @@ npm install
 <br>
 
 ````bash
-yarn add
+yarn install
 ````
 
 <br>
 
 ````bash
-pnpm instal
+pnpm install
 ````
 
 <br>
