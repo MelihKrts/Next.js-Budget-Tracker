@@ -25,5 +25,31 @@
 
 # How to Operate
 
-<p align="justify">Add an <code>.env</code> file to the main folder inside this project. Write the code to connect to MongoDB in the <code>.env </code> file. The project will run smoothly after the relevant packages are installed </p>
+<p align="justify">Add an <code>.env</code> file to the main folder inside this project. Write the code to connect to MongoDB in the <code>.env </code> file. The project will run smoothly after the relevant packages are installed <br>
+
+```bash
+npm install
+```
+
+<br>
+
+````bash
+yarn add
+````
+
+<br>
+
+````bash
+pnpm instal
+````
+
+<br>
+
+````bash
+bun install
+````
+
+<br>
+By selecting any of them you can complete the installation of the project.
+</p>
 
